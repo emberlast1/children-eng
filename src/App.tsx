@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import { MainScreen } from "./components/MainScreen/MainScreen";
 import { Animals } from "./components/Animals/Animals";
@@ -11,7 +11,7 @@ function App() {
 
 
    return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<MainScreen />} />
         <Route path="/animals" element={<Animals />} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/colors" element={<Colors />} />
         <Route path="/days" element={<Days />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
