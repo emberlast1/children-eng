@@ -1,6 +1,8 @@
-.Vege {
+@use "../../styles/animations";
+
+.Numbers {
    padding-block: 64px;
-    background: linear-gradient(#CBED86, #FFFFFF, #FFFFFF, #CBED86);
+    background: #E7E953;
    min-height: 100vh;
    display: flex;
    flex-direction: column;
@@ -17,7 +19,7 @@
       background: url('https://demo.promo///og/CH/images/return.png') center no-repeat;
    }
 
-   .vege_block {
+   .numbers_block {
     color: #F28190;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      display: flex;
@@ -27,7 +29,7 @@
      gap: 16px;
      padding-block: 50px;
 
-     .veg {
+     .number {
       &_block {
          display: flex;
       flex-direction: column;
@@ -38,15 +40,18 @@
       @media (max-width: 429px){
         width: 40vw;
       }
+
       }
 
       &_img {
          border: 2px solid #D95F70;
-      border-radius: 80px;
+      border-radius: 50%;
       width: 180px;
-
+      height: 180px;
+      
       @media (max-width: 429px){
         width: 40vw;
+        height: 40vw;
       }
       }
      }

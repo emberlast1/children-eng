@@ -1,6 +1,6 @@
-.Vege {
+.Alphabet {
    padding-block: 64px;
-    background: linear-gradient(#CBED86, #FFFFFF, #FFFFFF, #CBED86);
+    background-color: #d8be19;
    min-height: 100vh;
    display: flex;
    flex-direction: column;
@@ -17,8 +17,7 @@
       background: url('https://demo.promo///og/CH/images/return.png') center no-repeat;
    }
 
-   .vege_block {
-    color: #F28190;
+   .alphabet_block {
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      display: flex;
      flex-wrap: wrap;
@@ -27,29 +26,45 @@
      gap: 16px;
      padding-block: 50px;
 
-     .veg {
+     .letter {
       &_block {
          display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
-
-      @media (max-width: 429px){
+       border: 2px solid #D95F70;
+         border-radius: 80px;
+         width: 180px;
+         height: 180px;
+         @media (max-width: 429px){
         width: 40vw;
+        height: 40vw;
+         }
+
+      &.playing {
+      animation: bounce 0.6s infinite;
       }
       }
 
-      &_img {
-         border: 2px solid #D95F70;
-      border-radius: 80px;
-      width: 180px;
-
-      @media (max-width: 429px){
-        width: 40vw;
-      }
+      &_name {
+        color: #fdfdfd;
+        font-size: 4rem;
       }
      }
     
    } 
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

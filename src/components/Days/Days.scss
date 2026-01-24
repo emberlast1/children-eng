@@ -38,6 +38,7 @@
       border: 4px solid #D95F70;
       border-radius: 40px;
       cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
 
       @media (max-width: 429px){
         width: 90vw;

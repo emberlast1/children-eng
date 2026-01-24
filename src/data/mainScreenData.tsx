@@ -1,6 +1,6 @@
 export const mainScreenComponentsData = [
     {
-        imageUrl: "https://demo.promo///og/CH/images/days.png",
+        imageUrl: "https://demo.promo///og/CH/images/daysOfTheWeek.png",
         name: "Дні тижня",
         nameEng: "Days"
     },
@@ -23,5 +23,20 @@ export const mainScreenComponentsData = [
         imageUrl: "https://demo.promo///og/CH/images/vege.png",
         name: "Овочі",
         nameEng: "Vegetables"
+    },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/shapes.png",
+        name: "Геометричні фігури",
+        nameEng: "Geometric shapes"
+    },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/alphabetNew.png",
+        name: "Англійський алфавіт",
+        nameEng: "English alphabet"
+    },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/numbers.png",
+        name: "Цифри",
+        nameEng: "Numbers"
     },
 ];

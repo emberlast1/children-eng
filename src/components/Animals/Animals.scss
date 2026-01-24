@@ -35,6 +35,7 @@
       flex-direction: column;
       align-items: center;
       cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
 
       @media (max-width: 429px){
         width: 40vw;

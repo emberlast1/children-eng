@@ -6,6 +6,9 @@ import { Fruits } from "./components/Fruits/Fruits";
 import { Vege } from "./components/Vege/Vege";
 import { Colors } from "./components/Colors/Colors";
 import { Days } from "./components/Days/Days";
+import { Shapes } from "./components/Shapes/Shapes";
+import { Alphabet } from "./components/Alphabet/Alphabet";
+import { Numbers } from "./components/Numbers/Numbers";
 
 function App() {
 
@@ -19,6 +22,9 @@ function App() {
         <Route path="/vegetables" element={<Vege />} />
         <Route path="/colors" element={<Colors />} />
         <Route path="/days" element={<Days />} />
+        <Route path="/geometric shapes" element={<Shapes />} />
+        <Route path="/english alphabet" element={<Alphabet />} />
+        <Route path="/numbers" element={<Numbers />} />
       </Routes>
     </HashRouter>
   );
