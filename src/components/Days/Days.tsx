@@ -10,10 +10,10 @@ export const Days: React.FC = () => {
     const [active, setActive] = useState<string | null>(null);
 
     return <section className="Days">
-        <div className="back_button" onClick={() => navigate("/")}>↩</div>
+        <div className="back_button" onClick={() => navigate("/")}></div>
         <div className="days_block">
             {daysData.map((item: Color) => {
-            return <div style={{backgroundColor: item.colorHash}} className={`day_block ${
+            return <div key={item.name} style={{backgroundColor: item.colorHash}} className={`day_block ${
               active === item.name ? "playing" : ""
             }`}
             onClick={() =>

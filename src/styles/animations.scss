@@ -1,0 +1,61 @@
+
+
+/* 🐇 СТРИБОК */
+.playing.wobble {
+  animation: bounce 0.6s infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
+}
+
+/* 🐶 ПОХИТУВАННЯ */
+.playing.wobble img {
+  animation: wobble 1s ease-in-out infinite;
+}
+
+@keyframes wobble {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* 🌈 КРУГЛЕ СЯЮЧЕ КІЛЬЦЕ */
+.playing.wobble {
+  position: relative;
+  z-index: 1;
+}
+
+.playing.wobble::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #ffd86f,
+    #ff9a9e,
+    #a18cd1,
+    #84fab0,
+    #ffd86f
+  );
+  filter: blur(8px);
+  opacity: 0.9;
+  animation: ring-rotate 2.5s linear infinite,
+             ring-pulse 1.8s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes ring-rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes ring-pulse {
+  0%   { opacity: 0.6; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.6; }
+}

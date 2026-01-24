@@ -28,8 +28,8 @@ export const vegeData = [
         name: "Garlic",
     },
     {
-        imageUrl: "https://demo.promo///og/CH/images/vege/onion.png",
-        name: "Onion",
+        imageUrl: "https://demo.promo///og/CH/images/vege/pumpkin.png",
+        name: "Pumpkin",
     },
     {
         imageUrl: "https://demo.promo///og/CH/images/vege/pepper.png",

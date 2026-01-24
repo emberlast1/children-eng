@@ -5,7 +5,7 @@ import { Animals } from "./components/Animals/Animals";
 import { Fruits } from "./components/Fruits/Fruits";  
 import { Vege } from "./components/Vege/Vege";
 import { Colors } from "./components/Colors/Colors";
-import { Days } from "./components/Colors copy/Days";
+import { Days } from "./components/Days/Days";
 
 function App() {
 

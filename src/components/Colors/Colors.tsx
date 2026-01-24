@@ -10,10 +10,10 @@ export const Colors: React.FC = () => {
     const [active, setActive] = useState<string | null>(null);
 
     return <section className="Colors">
-        <div className="back_button" onClick={() => navigate("/")}>↩</div>
+        <div className="back_button" onClick={() => navigate("/")}></div>
         <div className="colors_block">
             {colorData.map((item: Color) => {
-            return <div className={`color_block ${
+            return <div key={item.name} className={`color_block ${
               active === item.name ? "playing" : ""
             }`}
             onClick={() =>

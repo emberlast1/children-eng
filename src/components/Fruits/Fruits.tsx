@@ -2,31 +2,27 @@ import { useNavigate } from "react-router-dom";
 import { fruitsData} from "../../data/fruitsData.tsx"
 import type { Animal } from "../../types/animal.ts";
 import "./Fruits.scss";
-import { speak } from "../../features/speak.ts";
-import { useState } from "react";
+import { useSpeakAnimation } from "../../hooks/useSpeakAnimation.ts";
 
 export const Fruits: React.FC = () => {
     const navigate = useNavigate();
-    const [active, setActive] = useState<string | null>(null);
+    const { active, animation, play } = useSpeakAnimation();
 
-    return <section className="Fruits">
-        <div className="back_button" onClick={() => navigate("/")}>↩</div>
+    return (<section className="Fruits">
+        <div className="back_button" onClick={() => navigate("/")}></div>
+
         <div className="fruits_block">
             {fruitsData.map((item: Animal) => {
-            return <div className={`fruit_block ${
-              active === item.name ? "playing" : ""
+            return <div key={item.name} className={`fruit_block ${
+              active === item.name ? `playing ${animation}` : ""
             }`}
             onClick={() =>
-              speak(
-                item.name,
-                () => setActive(item.name),
-                () => setActive(null)
-              )
+              play(item.name)
             }>
                 <img className="fruit_img" src={item.imageUrl} alt={item.name} />
                 <h2 className="fruit_name">{item.name}</h2>
             </div>
         })}
         </div>
-    </section>
+    </section>);
 }
