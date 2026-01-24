@@ -9,12 +9,17 @@ import { Days } from "./components/Days/Days";
 import { Shapes } from "./components/Shapes/Shapes";
 import { Alphabet } from "./components/Alphabet/Alphabet";
 import { Numbers } from "./components/Numbers/Numbers";
+import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
+import "./styles/animations.scss";
+import { MagicTransition } from "./components/MagicTransition/MagicTransition";
 
 function App() {
 
-
    return (
     <HashRouter>
+      <ScrollToTop />
+      <MagicTransition />
+
       <Routes>
         <Route path="/" element={<MainScreen />} />
         <Route path="/animals" element={<Animals />} />

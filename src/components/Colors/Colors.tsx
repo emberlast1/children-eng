@@ -9,7 +9,7 @@ export const Colors: React.FC = () => {
     const navigate = useNavigate();
     const [active, setActive] = useState<string | null>(null);
 
-    return <section className="Colors">
+    return <section className="Colors page">
         <div className="back_button" onClick={() => navigate("/")}></div>
         <div className="colors_block">
             {colorData.map((item: Color) => {

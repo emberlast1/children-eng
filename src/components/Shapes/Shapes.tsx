@@ -8,7 +8,7 @@ export const Shapes: React.FC = () => {
     const navigate = useNavigate();
     const { active, animation, play } = useSpeakAnimation();
 
-    return (<section className="Shapes">
+    return (<section className="Shapes page">
         <div className="back_button" onClick={() => navigate("/")}></div>
 
         <div className="shapes_block">

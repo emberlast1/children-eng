@@ -10,7 +10,7 @@ export const Numbers: React.FC = () => {
     const { active, animation, play } = useSpeakAnimation();
 
     return (
-    <section className="Numbers">
+    <section className="Numbers page">
       <div className="back_button" onClick={() => navigate("/")}></div>
 
       <div className="numbers_block">

@@ -9,7 +9,7 @@ export const Days: React.FC = () => {
     const navigate = useNavigate();
     const [active, setActive] = useState<string | null>(null);
 
-    return <section className="Days">
+    return <section className="Days page">
         <div className="back_button" onClick={() => navigate("/")}></div>
         <div className="days_block">
             {daysData.map((item: Color) => {

@@ -1,106 +1,106 @@
 export const alphabetData = [
     {
         text: "Aa",
-        name: "A",
+        name: "a",
     },
     {
         text: "Bb",
-        name: "B",
+        name: "b",
     },
     {
         text: "Cc",
-        name: "C",
+        name: "c",
     },
     {
         text: "Dd",
-        name: "D",
+        name: "d",
     },
     {
         text: "Ee",
-        name: "E",
+        name: "e",
     },
     {
         text: "Ff",
-        name: "F",
+        name: "f",
     },
     {
         text: "Gg",
-        name: "G",
+        name: "g",
     },
     {
         text: "Hh",
-        name: "H",
+        name: "h",
     },
     {
         text: "Ii",
-        name: "I",
+        name: "i",
     },
     {
         text: "Jj",
-        name: "J",
+        name: "j",
     },
     {
         text: "Kk",
-        name: "K",
+        name: "k",
     },
     {
         text: "Ll",
-        name: "L",
+        name: "l",
     },
     {
         text: "Mm",
-        name: "M",
+        name: "m",
     },
     {
         text: "Nn",
-        name: "N",
+        name: "n",
     },
     {
         text: "Oo",
-        name: "O",
+        name: "o",
     },
     {
         text: "Pp",
-        name: "P",
+        name: "p",
     },
     {
         text: "Qq",
-        name: "Q",
+        name: "q",
     },
     {
         text: "Rr",
-        name: "R",
+        name: "r",
     },
     {
         text: "Ss",
-        name: "S",
+        name: "s",
     },
     {
         text: "Tt",
-        name: "T",
+        name: "t",
     },
     {
         text: "Uu",
-        name: "U",
+        name: "u",
     },
     {
         text: "Vv",
-        name: "V",
+        name: "v",
     },
     {
         text: "Ww",
-        name: "W",
+        name: "w",
     },
     {
         text: "Xx",
-        name: "X",
+        name: "x",
     },
     {
         text: "Yy",
-        name: "Y",
+        name: "y",
     },
     {
         text: "Zz",
-        name: "Z",
+        name: "z",
     },
 ];

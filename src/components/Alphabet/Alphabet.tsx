@@ -8,7 +8,7 @@ export const Alphabet: React.FC = () => {
     const navigate = useNavigate();
     const { active, animation, play } = useSpeakAnimation();
 
-    return <section className="Alphabet">
+    return <section className="Alphabet page">
         <div className="back_button" onClick={() => navigate("/")}></div>
         <div className="alphabet_block">
             {alphabetData.map((item: Letter) => {

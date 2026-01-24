@@ -8,7 +8,7 @@ export const Fruits: React.FC = () => {
     const navigate = useNavigate();
     const { active, animation, play } = useSpeakAnimation();
 
-    return (<section className="Fruits">
+    return (<section className="Fruits page">
         <div className="back_button" onClick={() => navigate("/")}></div>
 
         <div className="fruits_block">

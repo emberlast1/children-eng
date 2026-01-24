@@ -8,7 +8,7 @@ export const Vege: React.FC = () => {
     const navigate = useNavigate();
     const { active, animation, play } = useSpeakAnimation();
 
-    return <section className="Vege">
+    return <section className="Vege page">
         <div className="back_button" onClick={() => navigate("/")}></div>
         <div className="vege_block">
             {vegeData.map((item: Animal) => {
