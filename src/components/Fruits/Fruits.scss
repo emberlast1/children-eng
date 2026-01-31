@@ -1,7 +1,7 @@
 @use "../../styles/animations";
 
 .Fruits {
-   padding-block: 64px;
+   padding-block: 34px;
     background: linear-gradient(#CBED86, #FFFFFF, #FFFFFF, #CBED86);
    min-height: 100vh;
    display: flex;
@@ -28,6 +28,7 @@
      justify-content: center;
      gap: 16px;
      padding-block: 50px;
+     overflow: hidden;
 
      .fruit {
       &_block {

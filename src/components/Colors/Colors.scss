@@ -1,5 +1,5 @@
 .Colors {
-   padding-block: 64px;
+   padding-block: 34px;
     background: linear-gradient(#EEA7B1, #AD5E69, #936A70);
    min-height: 100vh;
    display: flex;
@@ -25,6 +25,7 @@
      justify-content: center;
      gap: 16px;
      padding-block: 50px;
+     overflow: hidden;
 
      .color {
       &_block {

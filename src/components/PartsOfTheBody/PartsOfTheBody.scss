@@ -1,6 +1,8 @@
-.Days {
+@use "../../styles/animations";
+
+.PartsOfTheBody {
    padding-block: 34px;
-    background: linear-gradient(#EEA7B1, #AD5E69, #936A70);
+    background: linear-gradient(#CBED86, #FFFFFF, #FFFFFF, #CBED86);
    min-height: 100vh;
    display: flex;
    flex-direction: column;
@@ -17,7 +19,8 @@
       background: url('https://demo.promo///og/CH/images/return.png') center no-repeat;
    }
 
-   .days_block {
+   .parts_block {
+    color: #F28190;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      display: flex;
      flex-wrap: wrap;
@@ -25,43 +28,31 @@
      justify-content: center;
      gap: 16px;
      padding-block: 50px;
-     font-size: 2rem;
-     color: #fdfdfd;
      overflow: hidden;
 
-     .day {
+     .part {
       &_block {
          display: flex;
       flex-direction: column;
       align-items: center;
-      width: 387px;
-      padding-block: 30px;
-      border: 4px solid #D95F70;
-      border-radius: 40px;
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
 
       @media (max-width: 429px){
-        width: 90vw;
+        width: 40vw;
+      }
       }
 
-      &.playing {
-      animation: bounce 0.6s infinite;
+      &_img {
+         border: 2px solid #D95F70;
+      border-radius: 80px;
+      width: 180px;
+      
+      @media (max-width: 429px){
+        width: 40vw;
       }
       }
      }
     
    } 
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }

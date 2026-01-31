@@ -1,7 +1,7 @@
 @use "../../styles/animations";
 
 .Numbers {
-   padding-block: 64px;
+   padding-block: 34px;
     background: #E7E953;
    min-height: 100vh;
    display: flex;
@@ -28,6 +28,7 @@
      justify-content: center;
      gap: 16px;
      padding-block: 50px;
+     overflow: hidden;
 
      .number {
       &_block {

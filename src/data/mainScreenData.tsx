@@ -39,4 +39,24 @@ export const mainScreenComponentsData = [
         name: "Цифри",
         nameEng: "Numbers"
     },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/partsOfTheBody.png",
+        name: "Частини тіла",
+        nameEng: "Body"
+    },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/counter.png",
+        name: "Рахунок",
+        nameEng: "Math game"
+    },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/countAnimals.png",
+        name: "Порахуй тварин",
+        nameEng: "Count animals"
+    },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/family.png",
+        name: "Сім'я",
+        nameEng: "Family"
+    },
 ];

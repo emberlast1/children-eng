@@ -1,0 +1,70 @@
+@use "../../styles/animations";
+
+.Counter {
+   padding-block: 34px;
+    background: linear-gradient(#CBED86, #FFFFFF, #FFFFFF, #CBED86);
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+
+   .count_game {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: none;
+   margin-bottom: 0;
+
+  &.correct {
+  animation: successPop 0.6s ease;
+}
+
+   &.wrong {
+  animation: shake 0.4s;
+}
+
+.count_example {
+  font-size: 4rem;
+  color: #ff6f91;
+  margin-bottom: 20px;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.answer_btn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 4rem;
+  background: #CBED86;
+  color: #ff6f91;
+  border: 2px solid #D95F70;
+  
+  &:active {
+    transform: scale(1.2);
+  }
+}
+}
+
+
+.back_button {
+      color: #fdfdfd;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 30px;
+      border-radius: 40px;
+      cursor: pointer;
+      background: url('https://demo.promo///og/CH/images/return.png') center no-repeat;
+   }
+   
+}
+
+

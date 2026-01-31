@@ -1,0 +1,83 @@
+@use "../../styles/animations";
+
+.CountAnimals {
+  padding-block: 34px;
+    background: #CDE097;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+  .back_button {
+      color: #fdfdfd;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 30px;
+      border-radius: 40px;
+      cursor: pointer;
+      background: url('https://demo.promo///og/CH/images/return.png') center no-repeat;
+   }
+
+   .count_game {
+    display: flex;
+    flex-direction: column;
+
+    &.correct {
+  animation: successPop 0.6s ease;
+  }
+
+    &.wrong {
+  animation: shake 0.4s;
+    }
+
+    .animals {
+      padding-top: 2rem;
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+   }
+   
+
+
+.animal {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: #fff;
+  padding: 8px;
+}
+
+.answers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+}
+
+.answer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  font-size: 28px;
+  background: #eaf5e0;
+  color: #2f7d32;
+
+  &:active {
+    transform: scale(1.2);
+  }
+}
+}
+
+
+

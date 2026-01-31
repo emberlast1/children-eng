@@ -63,6 +63,7 @@
 .page {
   min-height: 100vh;
   animation: kids-pop-in 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+  overflow: hidden;
 }
 
 @keyframes kids-pop-in {
@@ -140,4 +141,18 @@
     transform: scale(1.2) translate(var(--x), var(--y));
     opacity: 0;
   }
+}
+
+@keyframes successPop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
 }

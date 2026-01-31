@@ -12,6 +12,10 @@ import { Numbers } from "./components/Numbers/Numbers";
 import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 import "./styles/animations.scss";
 import { MagicTransition } from "./components/MagicTransition/MagicTransition";
+import { PartsOfTheBody } from "./components/PartsOfTheBody/PartsOfTheBody";
+import { Counter } from "./components/Counter/Counter";
+import { CountAnimals } from "./components/CountAnimals/CountAnimals";
+import { Family } from "./components/Family/Family";
 
 function App() {
 
@@ -30,6 +34,10 @@ function App() {
         <Route path="/geometric shapes" element={<Shapes />} />
         <Route path="/english alphabet" element={<Alphabet />} />
         <Route path="/numbers" element={<Numbers />} />
+        <Route path="/body" element={<PartsOfTheBody />} />
+        <Route path="/math game" element={<Counter />} />
+        <Route path="/count animals" element={<CountAnimals />} />
+        <Route path="/family" element={<Family />} />
       </Routes>
     </HashRouter>
   );
