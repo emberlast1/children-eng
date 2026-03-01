@@ -74,4 +74,9 @@ export const mainScreenComponentsData = [
         name: "Шкільні речі",
         nameEng: "School items"
     },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/homeItems.png",
+        name: "Домашні речі",
+        nameEng: "Home items"
+    },
 ];

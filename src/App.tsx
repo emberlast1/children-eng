@@ -19,6 +19,7 @@ import { Family } from "./components/Family/Family";
 import { Seasons } from "./components/Seasons/Seasons";
 import { SeaCreatures } from "./components/seaCreatures/seaCreatures";
 import { SchoolItems } from "./components/schoolItems/schoolItems";
+import { HomeItems } from "./components/homeItems/homeItems";
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/seasons" element={<Seasons />} />
         <Route path="/sea creatures" element={<SeaCreatures />} />
         <Route path="/school items" element={<SchoolItems />} />
+        <Route path="/home items" element={<HomeItems />} />
           
       </Routes>
     </HashRouter>
