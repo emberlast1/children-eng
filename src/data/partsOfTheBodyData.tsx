@@ -59,4 +59,8 @@ export const partsOfTheBodyData = [
         imageUrl: "https://demo.promo///og/CH/images/partsOfTheBody/tongue.png",
         name: "Tongue",
     },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/partsOfTheBody/hair.png",
+        name: "Hair",
+    },
 ];

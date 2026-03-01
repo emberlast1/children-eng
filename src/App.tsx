@@ -16,6 +16,9 @@ import { PartsOfTheBody } from "./components/PartsOfTheBody/PartsOfTheBody";
 import { Counter } from "./components/Counter/Counter";
 import { CountAnimals } from "./components/CountAnimals/CountAnimals";
 import { Family } from "./components/Family/Family";
+import { Seasons } from "./components/Seasons/Seasons";
+import { SeaCreatures } from "./components/seaCreatures/seaCreatures";
+import { SchoolItems } from "./components/schoolItems/schoolItems";
 
 function App() {
 
@@ -38,6 +41,10 @@ function App() {
         <Route path="/math game" element={<Counter />} />
         <Route path="/count animals" element={<CountAnimals />} />
         <Route path="/family" element={<Family />} />
+        <Route path="/seasons" element={<Seasons />} />
+        <Route path="/sea creatures" element={<SeaCreatures />} />
+        <Route path="/school items" element={<SchoolItems />} />
+          
       </Routes>
     </HashRouter>
   );

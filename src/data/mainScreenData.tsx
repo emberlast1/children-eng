@@ -59,4 +59,19 @@ export const mainScreenComponentsData = [
         name: "Сім'я",
         nameEng: "Family"
     },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/seasons.png",
+        name: "Пори року",
+        nameEng: "Seasons"
+    },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/seaCreatures.png",
+        name: "Морські істоти",
+        nameEng: "Sea creatures"
+    },
+    {
+        imageUrl: "https://demo.promo///og/CH/images/SchoolItems.png",
+        name: "Шкільні речі",
+        nameEng: "School items"
+    },
 ];

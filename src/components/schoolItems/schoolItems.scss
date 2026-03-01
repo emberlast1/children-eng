@@ -1,0 +1,59 @@
+@use "../../styles/animations";
+
+.SchoolItems{
+   padding-block: 34px;
+    background: #6BB15A;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .back_button {
+      color: #fdfdfd;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 30px;
+      border-radius: 40px;
+      cursor: pointer;
+      background: url('https://demo.promo///og/CH/images/return.png') center no-repeat;
+   }
+
+   .items_block {
+    color: #fdfdfd;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     gap: 16px;
+     padding-block: 50px;
+     overflow: hidden;
+
+     .item {
+      &_block {
+         display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+
+      @media (max-width: 429px){
+        width: 40vw;
+      }
+      }
+
+      &_img {
+         border: 2px solid #D95F70;
+      border-radius: 80px;
+      width: 180px;
+      background-color: #fdfdfd;
+      
+      @media (max-width: 429px){
+        width: 40vw;
+      }
+      }
+     }
+    
+   } 
+}

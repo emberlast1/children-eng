@@ -1,0 +1,85 @@
+.WhereIs {
+   padding-block: 34px;
+    background: url('https://demo.promo///og/CH/images/whereIs/background.png') center no-repeat;
+    background-size: 100% 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .back_button {
+      color: #fdfdfd;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 30px;
+      border-radius: 40px;
+      cursor: pointer;
+      background: url('https://demo.promo///og/CH/images/return.png') center no-repeat;
+   }
+
+   .bee {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.scene {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.food_item {
+  width: 100px;
+  touch-action: none;
+  cursor: grab;
+  transition: transform 0.2s;
+}
+
+.food_item:hover {
+  transform: scale(1.1);
+}
+
+.basket {
+  font-size: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.5);
+}
+
+.correct {
+  animation: success 0.7s;
+}
+
+.wrong {
+  animation: shake 0.4s;
+}
+
+@keyframes success {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
+
+   
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
